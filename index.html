@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#d61a4c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link href="main.css" rel="stylesheet" >
+
+    <link href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL&family=IBM+Plex+Sans+Arabic&family=Poppins&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;600&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet"></link>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet"></link>
+    <title>Document</title>
+</head>
+
+<header id="myHeader">
+  <section class="header__area">
+    <div class="header_top_area">
+      <div class="nav__bar">
+        <div class="logo__icon">
+          <object data="svg/logo.svg" type="image/svg+xml" aria-label="riwatat space" class="icon"></object>
+        </div>
+      </div>
+
+      <div class="search">
+        <div class="search_input" aria-label="Search your novel">
+          <input type="search" id="search" name="search" placeholder="أدخل إسم روايتك" spellcheck="false" dir="rtl" autocomplete="off" aria-label="Search your novel">
+          <object data="svg/loop.svg" type="image/svg+xml" aria-labelledby=" البحث" class="icon-loop" aria-hidden="true"></object>
+        </div>
+      </div>
+
+        <div class="profile__bars">
+            <div class="bar__close" tabindex="0" role="menu">
+              <object data="svg/bars.svg" type="image/svg+xml" class="icon-bars"></object>
+              <object data="svg/close.svg" type="image/svg+xml" class="icon-close"></object>
+        
+              <label class="switch switch_pc" role="dark/light theme">
+                <input type="checkbox" aria-label="change theme to dark or ligh">
+                <span class="slider"></span>
+              
+              </div>
+              </label>
+            <div class="profile" tabindex="0">
+              <object data="svg/profile.svg" type="image/svg+xml" class="icon-home"></object>         
+            </div>
+          </div>
+    </div>
+    <div class="header_bottom_area">
+      <ul id="pc_nav" class="nav__bar__ul" aria-label="navigation">
+        <li>
+          <a href="">           
+            <object data="svg/home.svg" type="image/svg+xml" class="icon-home" aria-hidden="true"></object>
+        </a></li>
+        <li><a href="">المكتبة </a></li>
+        <li><a href="">أخر التحديثات</a></li>
+        <li><a href="">المفضلة</a></li>
+        <li><a href="">التصنيفات</a></li>
+    </ul>
+    <ul id="mobile_nav" class="nav__bar__ul" aria-label="navigation">
+      <li>
+        <label for="phone--search" class="mobile_phone_search" aria-label="Search your novel">
+          <object data="svg/loop.svg" type="image/svg+xml" class="icon-home"></object>       
+            <input id="phone--search" type="search" placeholder="البحث" dir="rtl" spellcheck="false" autocomplete="off">
+          </label>
+      </li>
+      <li>
+        <object data="svg/home.svg" type="image/svg+xml" class="icon-home"></object>
+        <a href="#">
+          <span>الرئيسية</span>
+        </a>
+      </li>
+      <li>
+        <object data="svg/library.svg" type="image/svg+xml" ></object>  
+        <a href="#">
+          <span>المكتبة</span>
+        </a>
+      </li>
+      <li>
+        <object data="svg/favorite.svg" type="image/svg+xml"></object>   
+        <a href="#" aria-labelledby=" favorite">
+          <span aria-labelledby=" favorite">المفضلة</span>
+        </a>
+      </li>
+      <li>
+        <object data="svg/lastest.svg" type="image/svg+xml" ></object>   
+        <a href="#">
+          <span>أخر التحديثات</span>
+        </a>
+      </li>
+      <li>
+        <div class="io_return">
+          <div class="p-close-button">
+            <button class="close-button" role="button" aria-roledescription="menu close">
+              <span>الرجوع</span>
+              <object data="svg/arrow.svg" type="image/svg+xml" class="icon-arrow"></object>
+            </button>
+          </div>
+          <div class="io" aria-hidden="true">
+            <label class="switch">
+              <input type="checkbox" data-attribute="dark_light">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </li>
+    </ul>    
+    </div>
+  </section>
+</header>
+<div class="fade_" aria-hidden="true"></div>
+<body style="background-color: black;">
+    <section class="splide" id="slider1" aria-labelledby="main-scroller">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <div class="splide__slide main_splide">
+              <div class="image_box">
+                  <img src="https://i.postimg.cc/QN9tvgfR/image-2023-11-23-105252356.png" alt="رواية الهلاك المقيت" fetchpriority="high">
+                  <div class="content_box_wraper">
+                  <div class="content_box">
+                    <div class="tag"><span class="tag-content" id="trend"><span class="tag-content-text">الرائج</span> <span class="tag-content-emoji">🏹</span></span> </div>
+                    <div class="novel-name-container"><span class="novel-name two-line-collaps">الهلاك المقيت</span></div>
+                    <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                  </div></div>
+            
+          </div></div>  
+          <div class="splide__slide main_splide">
+            <div class="image_box"> 
+              <img src="https://i.postimg.cc/63h7qBGF/image-2023-11-23-105113360.png" alt="رواية طائفة جبل هوا" fetchpriority="high">
+              <div class="content_box_wraper">
+                <div class="content_box">
+                  <div class="tag"><span class="tag-content" id="latest"> <span class="tag-content-text">الجديد</span><span class="tag-content-emoji">👋</span></span></div>
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps">طائفة جبل هوا</span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div></div>
+            </div>
+          </div>
+          <div class="splide__slide main_splide">
+            <div class="image_box">
+              <img src="https://i.postimg.cc/25mSgP16/image-2023-11-23-104223835.png" alt="رواية لابد أن أختم السماوات" fetchpriority="high">
+              <div class="content_box_wraper">
+                <div class="content_box">
+                  <div class="tag"><span class="tag-content" id="hot"><span class="tag-content-text">حار</span><span class="tag-content-emoji">🔥</span></span> </div>
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps">لابد أن أختم السماوات</span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div></div>
+            </div>
+          </div>
+          <div class="splide__slide main_splide">
+            <div class="image_box">
+              <img src="https://i.postimg.cc/dt22dKcQ/image-2023-11-23-104613990.png" alt="رواية ما وراء الزمن" fetchpriority="high">
+              <div class="content_box_wraper">
+                <div class="content_box">
+                  <div class="tag"><span class="tag-content" id="top"><span class="tag-content-text">مميز</span><span class="tag-content-emoji">🥇</span></span> </div>
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps">ما وراء الزمن</span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div></div>
+            </div>
+          </div>
+          <div class="splide__slide main_splide">
+            <div class="image_box">
+              <img src="https://i.postimg.cc/1XxWmcwv/image-2023-11-23-104958905.png" alt="رواية الخالد المرتد" fetchpriority="high">
+              <div class="content_box_wraper">
+                <div class="content_box">
+                  <div class="tag"><span class="tag-content" id="latest"><span class="tag-content-text">الجديد</span><span class="tag-content-emoji">👋</span></span></div>
+                    <div class="novel-name-container"><span class="novel-name two-line-collaps">الخالد المرتد </span></div>
+                    <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                   
+                </div></div>
+            </div>
+          </div>
+          <div class="splide__slide main_splide">
+            <div class="image_box">
+              <img src="https://i.postimg.cc/QN9tvgfR/image-2023-11-23-105252356.png" alt="رواية لنمضي معا" fetchpriority="high">
+              <div class="content_box_wraper">
+                <div class="content_box">
+                  <div class="tag"><span class="tag-content" id="trend"><span class="tag-content-text">الرائج</span> <span class="tag-content-emoji">🏹</span></span> </div>
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps">لنمضي معا </span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div></div>
+            </div>
+          </div>
+      </div>
+      </ul>
+      </div>
+    </section>
+    
+    <section class="fill">
+        <div class="wrapper">
+            <h1>  
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" aria-hidden="true" focusable="false"><g transform="rotate(-90 16 16)"><path fill="#F8312F" d="M15.134 9.5a1 1 0 0 1 1.732 0L22.928 20a1 1 0 0 1-.866 1.5H9.938a1 1 0 0 1-.866-1.5z"/></g></svg>
+              الأكثر مشاهدة
+            </h1>
+          <div class="top_tier">
+
+            <div>
+              <a> 
+                <img src="https://i.postimg.cc/25mSgP16/image-2023-11-23-104223835.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                  <span>1</span>
+                  <div class="novel_name_gener">
+                    <div class="novel-name-container"><span class="novel-name two-line-collaps"> لابد أن أختم السماوات </span></div>
+                   <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                  </div>
+                </div>
+              </a>
+              <a>
+                <img src="https://riwyat.com/wp-content/uploads/2021/12/image_2022-12-19_164502037-175x238.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                  <span>2</span>
+                 <div class="novel_name_gener">
+                    <div class="novel-name-container"><span class="novel-name two-line-collaps">ما وراء الزمن  </span></div>
+                    <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                  </div>
+               </div>
+              </a>
+              <a>
+                <img src="https://riwyat.com/wp-content/uploads/2022/05/image_2022-09-09_221513071.webp" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                 <span>3</span>
+                 <div class="novel_name_gener">
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps">زراعة العالم  </span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div>
+              <a> 
+                <img src="https://i.postimg.cc/QN9tvgfR/image-2023-11-23-105252356.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                  <span>4</span>
+                  <div class="novel_name_gener">
+                    <div class="novel-name-container"><span class="novel-name two-line-collaps"> محاكاة إطالة العمر</span></div>
+                    <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div>
+                </div>
+              </a>
+              <a>
+                <img src="https://i.postimg.cc/dt22dKcQ/image-2023-11-23-104613990.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                 <span>5</span>
+                 <div class="novel_name_gener">
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps">ديث نوت  </span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div>    
+              </div>
+              </a>
+              <a>
+                <img src="https://i.postimg.cc/25mSgP16/image-2023-11-23-104223835.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                <span>6</span>
+                <div class="novel_name_gener">
+                 <div class="novel-name-container"><span class="novel-name two-line-collaps">كيميتسو نويايبا  </span></div>
+                 <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div> 
+              </div>
+              </a>
+            </div>
+
+            <div>
+              <a> 
+                <img src="https://i.postimg.cc/1zfNTRn6/image-2024-01-05-192102785.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                <span>7</span>
+                <div class="novel_name_gener">
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps">قاتل الشياطين  </span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+               </div>  
+                </div>
+              </a>
+              <a>
+                <img src="https://i.postimg.cc/QN9tvgfR/image-2023-11-23-105252356.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                <span>8</span>
+                <div class="novel_name_gener">
+                 <div class="novel-name-container"><span class="novel-name two-line-collaps">كيل اور  </span></div>
+                 <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div> 
+                </div>
+              </a>
+              <a>
+                <img src="https://i.postimg.cc/25mSgP16/image-2023-11-23-104223835.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+                <div class="info">
+                <span>9</span>
+                <div class="novel_name_gener">
+                 <div class="novel-name-container"><span class="novel-name two-line-collaps">كيلينق  </span></div>
+                 <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div> 
+              </div>
+              </a>
+            </div>
+          </div>  
+        </div>
+    </section>
+    
+    <section>
+      <div class="splide" id="slider2" aria-label="secondary-scroller">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide secondary-splider"><img src="https://i.postimg.cc/TYjwgpW7/image-2023-12-08-172857122.png" alt="" ondragstart="return false;"></li>
+            <li class="splide__slide secondary-splider"><img src="https://i.postimg.cc/m2jZXK2B/image-2023-12-08-171325400.png" alt="" ondragstart="return false;"></li>
+            <li class="splide__slide secondary-splider"><img src="https://i.postimg.cc/wjT6NFzM/image-2023-12-08-172959027.png" alt="" ondragstart="return false;"></li>
+            <li class="splide__slide secondary-splider"><img src="https://i.postimg.cc/430Nscrd/image-2023-12-08-172928877.png" alt="" ondragstart="return false;"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="fill">
+      <div class="wrapper">
+          <h1>  
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" aria-hidden="true" focusable="false"><g transform="rotate(-90 16 16)"><path fill="#F8312F" d="M15.134 9.5a1 1 0 0 1 1.732 0L22.928 20a1 1 0 0 1-.866 1.5H9.938a1 1 0 0 1-.866-1.5z"/></g></svg>
+            الأكثر مشاهدة
+          </h1>
+        <div class="top_tier">
+
+          <div>
+            <a> 
+              <img src="https://i.postimg.cc/25mSgP16/image-2023-11-23-104223835.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+                <span>1</span>
+                <div class="novel_name_gener">
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps"> لابد أن أختم السماوات </span></div>
+                 <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div>
+              </div>
+            </a>
+            <a>
+              <img src="https://riwyat.com/wp-content/uploads/2021/12/image_2022-12-19_164502037-175x238.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+                <span>2</span>
+               <div class="novel_name_gener">
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps">ما وراء الزمن  </span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+                </div>
+             </div>
+            </a>
+            <a>
+              <img src="https://riwyat.com/wp-content/uploads/2022/05/image_2022-09-09_221513071.webp" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+               <span>3</span>
+               <div class="novel_name_gener">
+                <div class="novel-name-container"><span class="novel-name two-line-collaps">زراعة العالم  </span></div>
+                <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div>
+            <a> 
+              <img src="https://i.postimg.cc/QN9tvgfR/image-2023-11-23-105252356.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+                <span>4</span>
+                <div class="novel_name_gener">
+                  <div class="novel-name-container"><span class="novel-name two-line-collaps"> محاكاة إطالة العمر</span></div>
+                  <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+              </div>
+              </div>
+            </a>
+            <a>
+              <img src="https://i.postimg.cc/dt22dKcQ/image-2023-11-23-104613990.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+               <span>5</span>
+               <div class="novel_name_gener">
+                <div class="novel-name-container"><span class="novel-name two-line-collaps">ديث نوت  </span></div>
+                <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+              </div>    
+            </div>
+            </a>
+            <a>
+              <img src="https://i.postimg.cc/25mSgP16/image-2023-11-23-104223835.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+              <span>6</span>
+              <div class="novel_name_gener">
+               <div class="novel-name-container"><span class="novel-name two-line-collaps">كيميتسو نويايبا  </span></div>
+               <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+              </div> 
+            </div>
+            </a>
+          </div>
+
+          <div>
+            <a> 
+              <img src="https://i.postimg.cc/1zfNTRn6/image-2024-01-05-192102785.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+              <span>7</span>
+              <div class="novel_name_gener">
+                <div class="novel-name-container"><span class="novel-name two-line-collaps">قاتل الشياطين  </span></div>
+                <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+             </div>  
+              </div>
+            </a>
+            <a>
+              <img src="https://i.postimg.cc/QN9tvgfR/image-2023-11-23-105252356.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+              <span>8</span>
+              <div class="novel_name_gener">
+               <div class="novel-name-container"><span class="novel-name two-line-collaps">كيل اور  </span></div>
+               <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+              </div> 
+              </div>
+            </a>
+            <a>
+              <img src="https://i.postimg.cc/25mSgP16/image-2023-11-23-104223835.png" alt="رواية الهلاك المقيت" fetchpriority="high" >
+              <div class="info">
+              <span>9</span>
+              <div class="novel_name_gener">
+               <div class="novel-name-container"><span class="novel-name two-line-collaps">كيلينق  </span></div>
+               <div class="novel-gener"><ul><li>أكشن</li><li>مغامرة</li><li>كوميديا</li></ul></div>
+              </div> 
+            </div>
+            </a>
+          </div>
+        </div>  
+      </div>
+  </section>
+
+          <script src= "js/script.js" ></script>
+          <script type="text/javascript">
+            Splide.defaults = {
+             type   : 'loop',
+             drag:'free',
+             snap:true,
+             autoplay:true,
+             interval:7000,
+             arrows:false,
+             direction:'ltr',
+             perMove: 1,
+              }
+
+            var splide = new Splide('#slider1', {
+            snap: !0,
+            arrows: !1,
+            autoplay: !0,
+            gap: 14,
+            mediaQuery: "min",
+            focus: 0,
+            padding: {
+                right: "4.5rem",
+                left: "0.75rem"
+            },
+            breakpoints: {
+              500: {
+                    perPage: 2,
+                    focus: "center",
+                    padding: "10vw",
+                    
+                },
+                768: {
+                    perPage: 2,
+                    focus: "center",
+                    padding: "10vw"
+                },
+                1024: {
+                    perPage: 3,
+                    focus: "center",
+                    padding: "10vw"
+                },
+                1921: {
+                    autoWidth: !0
+                }
+                }
+            });
+
+      
+            var splide2 = new Splide('#slider2', {
+             perPage: 1,
+             pagination: false,
+             gap:'2em',
+             arrows:true,
+             drag: true,
+             breakpoints: {
+                  660: {
+                    arrows:false,
+                  },
+              
+                }
+              });
+
+            splide2.mount();
+            splide.mount();
+        </script>
+</body>
+</html>
+
